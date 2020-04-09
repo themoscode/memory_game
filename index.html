@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"> 
+    <title>Memory spiel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <script src="js/script.js" defer="defer"></script>
+</head>
+<div class="title">
+    <h2>Memory Game</h2>
+    <label>Zeit: </label><label id="minutes">00</label>:<label id="seconds">00</label>
+</div>
+<br>
+<body>
+    
+    <div id="tableDiv"></div>
+    <br>    
+    <div style="text-align: center">
+        <button id="btnInit">Neu starten</button>
+        
+        <select id="selGrid">
+            <option value="2X2">2X2</option>
+            <option value="2X3">2X3</option>
+            <option value="2X4">2X4</option>
+            <option value="2X5">2X5</option>
+            <option value="2X6">2X6</option>
+            <option value="2X7">2X7</option>
+            <option value="4X3">4X3</option>
+            <option value="4X4">4X4</option>
+            <option value="4X5">4X5</option>
+            <option value="4X6">4X6</option>
+            <option value="4X7">4X7</option>
+            <option value="4X8">4X8</option>
+            <option value="6X6">6X6</option>
+            <option value="8X8">8X8</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        
+        <div id="winDiv">
+            <img src="images/winCup.png">
+            <h3 id="winMsg"> </h3>
+        </div>
+        
+    </div>
+    
+ </body> 
+</html>

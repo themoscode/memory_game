@@ -1,0 +1,89 @@
+
+body {background-color: black}
+
+.title {
+    text-align: center;
+  color:white
+}
+
+#winDiv{
+  display: none;
+}
+
+#loseDiv{
+  text-align: center;
+}
+
+#loseMsg{
+  color:red;
+}
+
+#winMsg {
+  color:yellow;
+}
+
+#tableDiv{
+  display:none;
+}
+
+table {
+    border-radius: 5px;
+    width: 100px;
+    margin: auto;
+    float: none;
+}
+
+
+td {
+    
+    text-align: center;
+    cursor:pointer;
+}
+
+img {
+    width:100px;
+    height:70px;
+}
+
+.scene {
+    width: 100px;
+    height: 70px;
+    xxborder: 1px solid #CCC;
+    perspective: 600px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+    background: lightgreen;
+  }
+  
+  .card__face--back {
+    
+    transform: rotateY(180deg);
+  }
+  
